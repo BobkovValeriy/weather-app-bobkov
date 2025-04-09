@@ -5,9 +5,9 @@ import { WeatherApiResponse } from "../types/currentWeatherResponce";
 const API_KEY = "F4koyX8XGPPjLR2UiGX5qZyO06Ys1XHm";
 
 const citySearchURL =
-  "http://dataservice.accuweather.com/locations/v1/cities/search";
+  "https://dataservice.accuweather.com/locations/v1/cities/search";
 const currentConditionsURL =
-  "http://dataservice.accuweather.com/currentconditions/v1/";
+  "https://dataservice.accuweather.com/currentconditions/v1/";
 
 export async function fetchCity(city: string): Promise<cityApiResponse | null> {
   const response = await axios.get<cityApiResponse[]>(citySearchURL, {
