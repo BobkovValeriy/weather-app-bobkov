@@ -19,7 +19,16 @@ const App = () => {
         setError={setError}
       />
 
-      {error && <Text color="red">{error}</Text>}
+      <div
+        style={{
+          padding: "20px 0 0 0",
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
+        {error && <Text color="red">{error}</Text>}
+      </div>
 
       {weatherData && <WetherCard city={city} weatherData={weatherData} />}
     </div>
